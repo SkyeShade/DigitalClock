@@ -1,5 +1,3 @@
-# Application entry point for the digital clock.
-
 from ui import launch
 
 

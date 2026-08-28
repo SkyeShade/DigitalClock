@@ -17,8 +17,8 @@ def get_timezone_names():
 def get_current_datetime(timezone_name):
     # Return the current aware datetime for the selected timezone.
 
-    # The operating system supplies the rules for the local option. Named zones use
-    # the IANA database, which automatically accounts for daylight-saving changes.
+    # The operating system supplies the rules for the local option.
+    # Named zones use IANA database, which automatically accounts for daylight saving changes.
 
     if timezone_name == LOCAL_TIME:
         return datetime.now().astimezone()
@@ -50,7 +50,6 @@ def create_window():
     window.title("Digital Clock")
     window.resizable(False, False)
 
-    # StringVar lets the update loop see a selection as soon as it changes.
     timezone_name = tk.StringVar(value=LOCAL_TIME)
 
     selector_frame = ttk.Frame(window)
