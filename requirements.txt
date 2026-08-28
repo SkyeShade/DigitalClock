@@ -1,0 +1,2 @@
+# IANA timezone database used by zoneinfo on Windows and in packaged builds.
+tzdata>=2025.2

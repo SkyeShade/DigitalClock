@@ -1,7 +1,10 @@
+# Application entry point for the digital clock.
+
 from ui import launch
 
 
 def main():
+    # Launch the graphical clock application.
     launch()
 
 
